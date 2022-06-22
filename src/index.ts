@@ -1,7 +1,8 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import 'dotenv/config';
 
-import routes from './routes/index';
+import routes from './routes';
 import logger from './utilities/logger';
 
 const app = express();
@@ -16,10 +17,14 @@ app.listen(process.env.PORT || PORT, () => {
   );
 });
 // #=======================================================================================#
+// #			                            body_parse                                     #
+// #=======================================================================================#
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+// #=======================================================================================#
 // #			                            router                                               #
 // #=======================================================================================#
 app.use('', logger, routes);
-
 // #=======================================================================================#
 // #			                        not Found middleware                                     #
 // #=======================================================================================#
