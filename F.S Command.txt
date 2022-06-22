@@ -4,9 +4,6 @@ npm init -y
 
 # install TS    =>    -D = --save-dev
 npm i -D typescript
-
-
-# initialize TSC
 npx tsc --init 
 
 
@@ -36,6 +33,6 @@ npm i -D nodemon
 npm i -D ts-node
 
 
-# add express
+# add body-parser
 npm i body-parser --save
 npm i --D @types/body-parser

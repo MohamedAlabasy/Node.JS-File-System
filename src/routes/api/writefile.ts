@@ -1,9 +1,9 @@
-import express from 'express';
+import { Request, Response, NextFunction, Router } from 'express';
 
 import { promises as fsPromises } from 'fs';
-const writefile = express.Router()
+const writefile = Router()
 
-writefile.post('', (request: express.Request, response: express.Response, next: express.NextFunction) => {
+writefile.post('', (request: Request, response: Response, next: NextFunction) => {
     fileWrite(request.body.data)
     response.status(200).json({
         status: 1,

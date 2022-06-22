@@ -1,9 +1,9 @@
-import express from 'express';
+import { Request, Response, NextFunction, Router } from 'express';
 import { promises as fsPromises } from 'fs';
 
-const readfile = express.Router()
+const readfile = Router()
 
-readfile.get('', (request: express.Request, response: express.Response, next: express.NextFunction) => {
+readfile.get('', (request: Request, response: Response, next: NextFunction) => {
     fileRead()
         .then(data => {
             response.status(200).json({
