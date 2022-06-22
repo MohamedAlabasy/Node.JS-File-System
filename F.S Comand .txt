@@ -1,6 +1,3 @@
-# Create index file
-touch index.ts
-
 # initialize the project
 npm init -y 
 
