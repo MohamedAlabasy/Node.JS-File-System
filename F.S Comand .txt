@@ -2,7 +2,7 @@
 npm init -y 
 
 # install TS    =>    -D = --save-dev
-npm i -D typescript 
+npm i -D typescript
 
 # initialize TSC
 npx tsc --init 
