@@ -25,6 +25,7 @@ npm i --D @types/jasmine
 
 # add express
 npm i express --save
+npm i --D @types/express
 
 # add node monitor
 npm i -D nodemon

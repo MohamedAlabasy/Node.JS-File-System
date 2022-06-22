@@ -1,2 +1,1 @@
-const myName = 'mohamed';
-console.log(myName);
+import express from 'express'
