@@ -1,7 +1,6 @@
 import express from 'express';
-const logger = express();
 
-logger.use((request: express.Request, response: express.Response, next: express.NextFunction) => {
+const logger = ((request: express.Request, response: express.Response, next: express.NextFunction) => {
     console.log(request.method, request.url);
     next()
 })
