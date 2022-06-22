@@ -1,0 +1,37 @@
+# Create index file
+touch index.ts
+
+# initialize the project
+npm init -y 
+
+# install TS    =>    -D = --save-dev
+npm i -D typescript 
+
+# initialize TSC
+npx tsc --init 
+
+
+# add EsLine
+npm i -D eslint
+
+
+# initialize eslint
+npx eslint --init
+
+
+# add prettier
+npm i -D prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier 
+
+# add jasmine
+npm i -D jasmine 
+npm i -D jasmine-spec-reporter
+npm i --D @types/jasmine
+
+
+# add express
+npm i express --save
+
+# add node monitor
+npm i -D nodemon
+npm i -D ts-node
