@@ -134,5 +134,5 @@ dist
 *.jpg
 *.jpeg
 
-# except
+# except avatar image
 !avatar.png
